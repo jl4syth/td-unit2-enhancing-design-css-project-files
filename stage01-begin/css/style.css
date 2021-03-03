@@ -46,7 +46,8 @@ img {
 header {
   padding: 10vh 1rem;
   margin: -1rem -1rem 1rem;
-  background-color: #f3753b;
+  background: url(../img/mountains.jpg) center / cover no-repeat #f3753b;
+  background-blend-mode: multiply;
   color: white;
 }
 header, footer {
@@ -62,9 +63,10 @@ main {
   padding: 20% 15%;
   border-top: 12px solid #f3753b;
   border-radius: 12px 12px 0 0;
-  background-color: #454959;
+  background: url(../img/bear.jpg) center / cover #454959;
   color: white;
   box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+
 }
 #wildlife a {
   color: #f7a27c;
