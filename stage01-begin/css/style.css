@@ -57,7 +57,13 @@ header, footer {
   letter-spacing: 1px;
 }
 main {
+  max-width: 1000px;
+  margin: 0 auto;
   hyphens: auto;
+}
+section {
+  padding: 4rem 0;
+  border-bottom: 1px dashed #9599a9;
 }
 #wildlife {
   padding: 20% 15%;
@@ -83,6 +89,35 @@ main {
   text-align: center;
   font-size: 1.25rem;
 }
+.column:first-child {
+  margin-bottom: 4rem;
+}
 
 /* Media Queries ------------------- */
-
+@media screen and (min-width: 720px) {
+  header {
+    padding: 20vh 1rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h1::after{
+    margin-top: 1rem;
+  }
+  .title {
+    font-size: 1.25rem;
+  }
+  .intro {
+    padding: 0 15%;
+    font-size: 1.1rem;
+  }
+  .column {
+    display: inline-block;
+    width: 48%;
+    margin-right: -4px;
+  }
+  .column:first-child {
+    margin-right: calc(4% -4px);
+    margin-bottom: 0;
+  }
+}
